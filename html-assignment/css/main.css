@@ -1,0 +1,119 @@
+/* Selectors */
+
+/* Element selector
+- Select all the tags of the same type */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+
+
+/* Targeting multiple elements
+- If you’d like to style more than one element the same way you can use a comma to separate the tag names. */
+header, footer {
+  background-color: rgb(123, 44, 44);
+}
+
+
+
+/* Some elements have default styling applied in the browser that you have to consider. The p element has margin top and bottom. */
+
+
+
+
+/* . Class selector
+- Select an element that has a class */ 
+.site-title {
+   color: blue;
+}
+
+/* # ID selector
+- Select an element that has has the ID - remember you can only have one unique ID per page */
+#my-image {
+  box-shadow: 0 0 2px 1px black;
+}
+
+#my-image {
+  width: 300px;
+  height: 300px;
+}
+
+
+/* + Adjacent sibling
+- Select an elemenc immediately beside another element */
+
+
+
+
+/* Element selector
+- Affecting multiple h2 on the page */
+
+
+
+/* > Child selector 
+- Select an element directly inside another element */
+
+
+
+
+
+/* [] Attribute
+- Select an element by it’s attribute. */
+
+
+
+
+
+/* Pseudo classes */
+
+/* :nth-child()
+- Select an element by it’s number OR odd/even. */
+
+ul li:nth-child(odd) {
+   background-color: rgb(222, 169, 34);
+}
+
+/* :last-child
+- Select the element when it’s the last inside its parent. */
+
+
+
+/* :first-of-type
+- Select an element that’s the first of its kind within its parent. */
+
+
+
+
+
+/* Removing bullets and changing bullet type */
+ul {
+  list-style-type: square;
+}
+
+nav ul {
+  list-style: none;
+}
+
+/* Change link styling */
+nav a {
+  text-decoration: none;
+  background-color: #a89191;
+  border-bottom: 1px solid black; 
+}
+
+nav a:hover  nav a:focus {
+  text-decoration: none;
+  background-color: rgb(31, 31, 136);
+  border: 2px rgb(115, 90, 90);
+}
+
+style>
+ /* removes the underline all links */
+ a {
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 5px 10px;
+ }
+
