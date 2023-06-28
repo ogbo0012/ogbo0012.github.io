@@ -1,0 +1,200 @@
+html {
+  box-sizing: border-box
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+#site-title {
+  position: absolute;
+  background-color: rgb(16, 96, 69);
+  padding-left: 18px;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #d4e9e7;
+}
+
+.bottom {
+  text-align: left;
+  margin: 50px;
+  border: 3px #000;
+  border-style: double;
+}
+
+.bottom {
+  text-align: left;
+  margin: 50px;
+  border: 3px #865959;
+  border-style: double;
+  margin: 30px;
+  margin-top: 10px;
+  justify-content: left;
+}
+
+.centered {
+  font-size: 24pt;
+  color: azure;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  transform: translate(-50%, -50%)
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  font-size: 22pt;
+  border-left: 2px;
+  border-style: solid black;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  background-color: #aad4cf;
+  line-height: 1.4;
+  hyphens: auto;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: 20px;
+  text-align: center;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.display {
+  text-align: center;
+ }
+
+.display ul li {
+  background-color: rgb(23, 141, 101);
+  font-size: 16px;
+  padding: 20px;
+  display: contents;
+  text-align: center;
+ }
+
+ ul li a {
+  display: inline-block;
+ }
+
+.wrapper {
+  background-color: antiquewhite;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.starfish ul {
+  text-align: justify;
+  padding-left: 16px;
+  padding-right: 8px;
+}
+
+/* div class facts */
+.facts h4 {
+  text-align: left;
+  margin: 10px;
+}
+
+/* Trageting multiple elements
+- If you'd like to style more than one element the same way you can use a comma to separate the tag names. */
+.container {
+  position: relative
+ }
+
+h2 {
+  text-align: left;
+}
+
+.fax {
+  text-align: justify;
+}
+
+img {
+  width: 500px;
+  float: left;
+  margin: 4px;
+  height: 300px;
+}
+
+#my-image {
+  padding: 8px;
+  padding-right: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+p {
+  text-align: justify;
+  font-size: 18px;
+  margin: 18px;
+}
+
+.centered {
+  font-size: 20pt;
+  color: #ffffff;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50)
+}
+
+#name {
+  width: 500px;
+}
+
+#email {
+  width: 500px;
+}
+
+#message {
+  width: 500px;
+  height: 150px;
+}
+
+.radiobutton {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+footer {
+  margin-right: 12px;
+  display: grid;
+  justify-content: left;
+  align-content: left;
+}
+
+.contact {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.submit {
+  background-color: beige;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+textarea {
+  width: auto;
+  resize: none;
+}
+
+/* removing bullets and changing bullet type */
+ul .starfish, h4 {
+  list-style-type: square;
+  list-style-position: inherit;
+  list-style: none;
+}
