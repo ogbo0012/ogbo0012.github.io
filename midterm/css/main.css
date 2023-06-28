@@ -1,190 +1,122 @@
-html {
-  box-sizing: border-box
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
-}
 
-#site-title {
-  position: absolute;
-  background-color: rgb(16, 96, 69);
-  padding-left: 18px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #AAD4CF;
 }
 
 .content {
-  max-width: 960px;
+  max-width: 800px;
   margin: 0 auto;
-  background-color: #d4e9e7;
+  background-color: #D4E9E7;
 }
 
-.bottom {
-  text-align: left;
-  margin: 50px;
-  border: 3px #000;
-  border-style: double;
+.banner {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background-color: bisque;
+
 }
 
-.bottom {
-  text-align: left;
-  margin: 50px;
-  border: 3px #865959;
-  border-style: double;
-  margin: 30px;
-  margin-top: 10px;
-  justify-content: left;
+.banner img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 100;
 }
 
-.centered {
-  font-size: 24pt;
-  color: azure;
+.banner h1 {
   position: absolute;
-  top: 25%;
-  left: 40%;
-  transform: translate(-50%, -50%)
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3.5rem;
+  z-index: 200;
 }
 
-.column {
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  margin: 3px 0;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+}
+
+nav ul li {
   float: left;
-  width: 33.33%;
-  font-size: 22pt;
-  border-left: 2px;
-  border-style: solid black;
-}
-
-body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 16px;
-  background-color: #aad4cf;
-  line-height: 1.4;
-  hyphens: auto;
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  margin: 20px;
+  width: calc(100% / 3);
+  padding: .5rem 1rem;
   text-align: center;
 }
 
-a {
-  color: #000;
+nav ul li {
+  color: black;
+  text-decoration: none;
+  border-left: 1px solid black;
+}
+
+nav ul li:first-of-type {
+  border-left: 0;
+}
+
+.nav-link {
+  color: black;
   text-decoration: none;
 }
 
-.display {
-  text-align: center;
- }
-
-.display ul li {
-  background-color: rgb(23, 141, 101);
-  font-size: 16px;
-  padding: 20px;
-  display: contents;
-  text-align: center;
- }
-
- ul li a {
-  display: inline-block;
- }
-
-.wrapper {
-  background-color: antiquewhite;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.starfish ul {
-  text-align: justify;
-  padding-left: 16px;
-  padding-right: 8px;
-}
-
-/* div class facts */
-.facts h4 {
-  text-align: left;
-  margin: 10px;
-}
-
-/* Trageting multiple elements
-- If you'd like to style more than one element the same way you can use a comma to separate the tag names. */
-.container {
-  position: relative
- }
-
 h2 {
-  text-align: left;
+  margin: .5rem 0;
 }
 
-.fax {
-  text-align: justify;
+article {
+  padding: 1rem
 }
 
-img {
-  width: 500px;
+.article-image {
   float: left;
-  margin: 4px;
-  height: 300px;
+  max-width: 200px;
+  margin: 0 1rem 1rem 0;
 }
 
-#my-image {
-  padding: 8px;
-  padding-right: 10px;
-  width: 300px;
-  height: 300px;
+.starfish-facts li {
+  margin-left: 1rem
 }
 
-p {
-  text-align: justify;
-  font-size: 18px;
-  margin: 18px;
+form {
+  border: 1px solid black;
+  padding: 1rem
 }
 
-.centered {
-  font-size: 20pt;
-  color: #ffffff;
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  transform: translate(-50%, -50)
-}
-
-#name {
-  width: 500px;
-}
-
-#email {
-  width: 500px;
-}
-
-#message {
-  width: 500px;
-  height: 150px;
-}
-
-.radiobutton {
-  margin-left: 10px;
-  display: inline-block;
-}
 
 footer {
   margin-right: 12px;
   display: grid;
-  justify-content: left;
-  align-content: left;
+  justify-content: right;
+  align-content: right;
 }
 
 .contact {
   padding-top: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
-  padding-left: 10px;
-}
-
-.submit {
-  background-color: beige;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+  padding-left: 10px
 }
 
 textarea {
@@ -192,9 +124,30 @@ textarea {
   resize: none;
 }
 
-/* removing bullets and changing bullet type */
-ul .starfish, h4 {
-  list-style-type: square;
-  list-style-position: inherit;
-  list-style: none;
+input, textarea {
+  width: 100%;
+  padding: .5rem .75rem;
 }
+
+form > div {
+  margin: 1rem 0;
+
+}
+
+.form-group input{
+  width: auto;
+  display: inline-block;
+}
+
+.form-group label{
+  margin-left: 10px
+}
+
+.form-group label:first-of-type {
+  margin-left: 0;
+}
+
+button {
+  padding: 5px;
+}
+
