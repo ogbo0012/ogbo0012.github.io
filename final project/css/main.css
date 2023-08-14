@@ -1,0 +1,521 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* css reset code */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.4;
+  font-family: "Open Sans", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* setting box sizing */
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+iframe {
+  width: 100%;
+}
+
+/* font sizes for page */
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0% auto;
+  padding: 1rem;
+  z-index: 2;
+  position: relative;
+}
+
+.logo {
+  background-color: #c78b08;
+}
+
+.logo img {
+  width: auto;
+}
+
+/* navigation background color */
+
+.navigation {
+  background-color: #222222;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  text-align: center;
+}
+
+.link a {
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  color: #c78b08;
+  width: 100%;
+}
+
+/* hover color for links */
+
+.link a:hover {
+  background-color: #c78b08;
+  color: #222222;
+}
+
+.search {
+  display: flex;
+}
+
+.search input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.search button {
+  background-color: #222;
+  outline: 0;
+  border: 1px solid #c78b08;
+  color: #c78b08;
+}
+
+.search button::after {
+  content: "search";
+  font-family: "Material Icons";
+  font-size: 1.75rem;
+}
+
+/* hero section */
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.text-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  flex-direction: column;
+  background-color: rgba(0.1, 0.1, 0.1, 0.5);
+  color: white;
+  gap: 1rem;
+}
+
+.our-service .button {
+  background-color: #222;
+  color: white;
+}
+
+/* button styles */
+
+.button {
+  background-color: #c78b08;
+  padding: 1rem 0.75rem;
+  font-size: 1rem;
+  margin-top: 0.75rem;
+  outline: 0;
+  border: 0;
+}
+
+.button::after {
+  content: "arrow_right";
+  font-family: "Material Icons";
+  vertical-align: middle;
+  font-size: 1.6rem;
+}
+
+#contact-us button {
+  background-color: #222;
+  color: #c78b08;
+  outline: 0;
+  border: 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.about-us-section {
+  background-color: #ffe6ac;
+}
+
+.about-us-section p:first-of-type {
+  margin-bottom: 1rem;
+}
+
+.our-service {
+  background-color: #ffe6ac;
+  display: flex;
+  flex-direction: column;
+}
+
+.our-service div {
+  padding: 1rem;
+}
+
+.service-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.vision-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.our-vision {
+  position: relative;
+  color: white;
+}
+
+.our-vision .button {
+  background-color: #0f1f36;
+  border: 1px solid #c78b08;
+  color: white;
+}
+
+.our-team-article {
+  background-color: #ffe6ac;
+}
+
+.our-team-article .content {
+  padding: 1rem;
+}
+
+/* grid for article content */
+
+.article-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* form styles */
+
+.form-item {
+  margin-bottom: 0.5rem;
+}
+
+.form-item input,
+.form-item label,
+textarea {
+  width: 100%;
+  display: block;
+}
+
+.form-item input {
+  padding: 0.5rem;
+  width: 100%;
+  display: block;
+}
+
+.form-item label {
+  margin-bottom: 5px;
+}
+
+.form-item textarea {
+  min-height: 200px;
+  resize: none;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+tr,
+td {
+  border: 1px solid #222;
+  padding: 1rem;
+}
+
+th {
+  background-color: #ffe6ac;
+}
+
+footer {
+  background-color: #222;
+  color: #c78b08;
+  padding: 1rem;
+}
+
+footer a {
+  color: #c78b08;
+}
+
+/* media query */
+
+@media screen and (min-width: 760px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+  .logo {
+    display: inline-block;
+    height: fit-content;
+  }
+
+  header.navigation .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .links {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+  }
+
+  .search input {
+    width: 200px;
+  }
+
+  .about-us-section .wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .about-us-section .wrapper img {
+    width: 50%;
+  }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "digital digital digital marketing marketing marketing"
+      "video video web web print print";
+  }
+
+  .service-grid article:nth-of-type(1) {
+    grid-area: digital;
+  }
+
+  .service-grid article:nth-of-type(2) {
+    grid-area: marketing;
+  }
+  .service-grid article:nth-of-type(3) {
+    grid-area: video;
+  }
+  .service-grid article:nth-of-type(4) {
+    grid-area: web;
+  }
+  .service-grid article:nth-of-type(5) {
+    grid-area: print;
+  }
+
+  .our-service .button {
+    width: 100%;
+  }
+
+  .article-grid {
+    gap: 0;
+  }
+
+  .article-grid img {
+    height: 100%;
+  }
+
+  .our-team-article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .our-team-article:last-of-type img {
+    order: 1;
+  }
+
+  /* using grid area for contact us section */
+
+  #contact-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header" "form iframe";
+    gap: 1rem;
+  }
+
+  #contact-us h2 {
+    grid-area: header;
+  }
+
+  #contact-us .form-grid {
+    grid-area: form;
+  }
+
+  #contact-us iframe {
+    grid-area: iframe;
+  }
+  
